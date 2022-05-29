@@ -1738,6 +1738,10 @@
 					color: inherit;
 				}
 			}
+		
+			.install-app-btn-container {
+				display: none;
+			  }
 
 			.actions {
 				@include vendor('order', '2');

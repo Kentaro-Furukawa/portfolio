@@ -3049,6 +3049,9 @@ body.is-preload #banner:after {
 #cta .inner header p {
   color: inherit;
 }
+#cta .inner .install-app-btn-container {
+  display: none;
+}
 #cta .inner .actions {
   -moz-order: 2;
   -webkit-order: 2;
