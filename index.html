@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	Hi, I'm Kentaro Furukawa. This is my portfolio website.
+	Hi, I'm Kentaro Furukawa. This is my portfolio.
 
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
@@ -12,7 +12,7 @@
 	<title>Kentaro Furukawa</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="theme-color" content="#252525"/>
+	<meta name="theme-color" content="#252525" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 	<link rel="manifest" href="manifest.json">
@@ -45,10 +45,7 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<li><a href="#">Sign Up</a></li>
-											<li><a href="#">Log In</a></li>
+											<li><button id="installApp">Install</button></li>
 										</ul>
 									</div>
 								</li>
@@ -197,10 +194,12 @@
 				<header>
 					<h2>Thank you!</h2>
 				</header>
-				<!-- <ul class="actions stacked">
-								<li><a href="#" class="button fit primary">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
-							</ul> -->
+				<div class="actions install-app-btn-container">
+					<h3>Keep it close?</h3>
+					<p>This portfolio is installable as a PWA. If you like this portfolio, please consider to install.</p>
+					</p>
+					<button id="installApp" class="button fit primary">Install</button>
+				</div>
 			</div>
 		</section>
 
@@ -233,6 +232,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/pwa.js"></script>
 
 </body>
 
