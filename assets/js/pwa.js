@@ -1,6 +1,8 @@
 let deferredPrompt;
 const installAppBtnContainer = document.querySelector('.install-app-btn-container');
-const installApp = document.getElementById('installApp');
+const installApp = document.querySelector('#installApp');
+const appInstallPromptModal = document.querySelector('#app-install-prompt-modal');
+
 
 window.addEventListener('beforeinstallprompt', (e) => {
     installAppBtnContainer.style.display = 'block';
@@ -8,7 +10,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 installApp.addEventListener('click', async () => {
-    if (deferredPrompt !== null) {
+    if (showAppInstallPrompt()) {
+        appInstallPromptModal.style.display = 'block';
+        
+    } else if (deferredPrompt !== null) {
         deferredPrompt.prompt();
         const { outcome } = await deferredPrompt.userChoice;
         if (outcome === 'accepted') {
@@ -16,3 +21,7 @@ installApp.addEventListener('click', async () => {
         }
     }
 });
+
+const showAppInstallPrompt = () => {
+    return ['iPhone', 'iPad', 'iPod'].includes(navigator.platform);
+  }

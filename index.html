@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 	<link rel="manifest" href="manifest.json">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -196,11 +198,33 @@
 				</header>
 				<div class="actions install-app-btn-container">
 					<h3>Keep it close?</h3>
-					<p>This portfolio is installable as a PWA.<br /> If you like this portfolio, please consider to install.</p>
+					<p>This portfolio is installable as a PWA.<br /> If you like this portfolio, please consider to
+						install.</p>
 					<button id="installApp" class="button fit primary">Install</button>
 				</div>
 			</div>
 		</section>
+
+		<div id="app-install-prompt-modal">
+			<div class="modal-content">
+				<button class="modal-close" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-header">
+					<h2 class="modal-title">Installation</h2>
+				</div>
+				<div class="modal-body">
+					<ol>
+						<li>Tap <span class="material-symbols-outlined share-icon">
+								ios_share
+							</span></li>
+						<li>then "Add to Home Screen".</li>
+					</ol>
+				</div>
+			</div>
+
+
+		</div>
 
 		<!-- Footer -->
 		<footer id="footer">
