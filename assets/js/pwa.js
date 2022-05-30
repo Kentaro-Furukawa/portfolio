@@ -9,10 +9,14 @@ window.addEventListener('beforeinstallprompt', (e) => {
     deferredPrompt = e;
 });
 
+const showAppInstallPrompt = () => {
+    return ['iPhone', 'iPad', 'iPod'].includes(navigator.platform);
+  };
+
 installApp.addEventListener('click', async () => {
     if (showAppInstallPrompt()) {
         appInstallPromptModal.style.display = 'block';
-        
+
     } else if (deferredPrompt !== null) {
         deferredPrompt.prompt();
         const { outcome } = await deferredPrompt.userChoice;
@@ -22,6 +26,5 @@ installApp.addEventListener('click', async () => {
     }
 });
 
-const showAppInstallPrompt = () => {
-    return ['iPhone', 'iPad', 'iPod'].includes(navigator.platform);
-  }
+
+
