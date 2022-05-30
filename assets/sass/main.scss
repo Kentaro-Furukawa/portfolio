@@ -1981,6 +1981,7 @@ body.is-mobile {
 		margin: 40% auto;
 		padding: 20px;
 		width: 80%;
+		border-radius: 3px;
 
 		.modal-title {
 			color: #252525;
@@ -1997,6 +1998,10 @@ body.is-mobile {
 			padding: 15px;
 			height: auto;
 			line-height: 10px;
+		}
+
+		li {
+			margin-bottom: 1rem;
 		}
 
 		.share-icon {
