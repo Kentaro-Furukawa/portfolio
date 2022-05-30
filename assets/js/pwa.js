@@ -17,7 +17,6 @@ const showAppInstallPrompt = () => {
 installApp.addEventListener('click', async () => {
     if (showAppInstallPrompt()) {
         appInstallPromptModal.style.display = 'block';
-
     } else if (deferredPrompt !== null) {
         deferredPrompt.prompt();
         const { outcome } = await deferredPrompt.userChoice;
