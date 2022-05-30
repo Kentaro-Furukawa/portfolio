@@ -3332,6 +3332,7 @@ body.is-mobile #main > header {
 }
 #app-install-prompt-modal .modal-content .share-icon {
   color: #006CFF;
+  vertical-align: bottom;
 }
 
 /* Footer */
