@@ -3326,6 +3326,7 @@ body.is-mobile #main > header {
   top: -70px;
   left: 95%;
   font-size: 30px;
+  font-weight: 100;
   box-shadow: none;
   padding: 15px;
   height: auto;
