@@ -1821,6 +1821,12 @@ body.is-menu-visible {
 			display: none;
 		}
 	}
+
+	.top-logo {
+		margin-bottom: 50px;
+		filter: invert(1);
+	}
+
 }
 
 body.is-preload {

@@ -3161,6 +3161,10 @@ body.is-menu-visible #menu {
     display: none;
   }
 }
+#banner .top-logo {
+  margin-bottom: 50px;
+  filter: invert(1);
+}
 
 body.is-preload #banner h2 {
   -moz-transform: scale(0.95);
