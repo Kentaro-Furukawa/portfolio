@@ -779,6 +779,10 @@ ol {
 }
 
 ul {
+	@include breakpoint('<=medium') {
+		list-style: none;
+	}
+
 	list-style: disc;
 	margin: 0 0 _size(element-margin) 0;
 	padding-left: 1em;
