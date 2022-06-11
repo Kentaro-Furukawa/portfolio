@@ -1997,6 +1997,9 @@ ul.icons.major li {
     padding: 0 1em !important;
   }
 }
+ul.icons.emoji-list li {
+  font-size: 3em;
+}
 
 /* Table */
 .table-wrapper {
