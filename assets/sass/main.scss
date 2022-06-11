@@ -935,9 +935,14 @@ ul.icons {
 		}
 	}
 
-	&.emoji-list {
+	&.major.emoji-list {
 		li {
+			padding-right: 1em;
 			font-size: 3em;
+
+			@include breakpoint('<=small') {
+				padding: 0 0.2em !important;
+			}
 		}
 	}
 }

@@ -1997,8 +1997,14 @@ ul.icons.major li {
     padding: 0 1em !important;
   }
 }
-ul.icons.emoji-list li {
+ul.icons.major.emoji-list li {
+  padding-right: 1em;
   font-size: 3em;
+}
+@media screen and (max-width: 736px) {
+  ul.icons.major.emoji-list li {
+    padding: 0 0.2em !important;
+  }
 }
 
 /* Table */
