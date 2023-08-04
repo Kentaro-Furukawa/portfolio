@@ -6,7 +6,7 @@ This is my old portfolio website. still live on Vercel server.
 
 This pass the aspects of a Progressive Web App, so you can install as an app.
 
-
+Thank you.
 
 ### References
 
